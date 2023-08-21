@@ -209,7 +209,7 @@ type Product = {
       id: 1,
       title: "Sicilian",
       desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
-      img: "/slide13.jpg",
+      img: "/slide17.jpg",
       price: 24.9,
       options: [
         {
@@ -251,7 +251,7 @@ type Product = {
       id: 3,
       title: "Bella Napoli",
       desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-      img: "/slide1.jpg",
+      img: "/slide8.jpg",
       price: 26.9,
       options: [
         {
@@ -272,7 +272,7 @@ type Product = {
       id: 4,
       title: "Pesto Primavera",
       desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-      img: "/slide2.jpg",
+      img: "/slide10.jpg",
       price: 28.9,
       options: [
         {
@@ -314,7 +314,7 @@ type Product = {
       id: 6,
       title: "Four Cheese Fantasy",
       desc: "Experience pure cheesy bliss with a melty blend of mozzarella, cheddar, provolone, and Parmesan cheeses, creating a rich and indulgent pizza experience.",
-      img: "/slide5.jpg",
+      img: "/slide10.jpg",
       price: 22.9,
       options: [
         {
@@ -335,9 +335,9 @@ type Product = {
   
   export const singleProduct: Product = {
     id: 1,
-    title: "Sicilian",
+    title: "Beef Steak",
     desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
-    img: "/slide4.jpg",
+    img: "/slide17.jpg",
     price: 24.9,
     options: [
       {
@@ -377,17 +377,17 @@ type Product = {
     {
       id: 2,
       slug: "burgers",
-      title: "Juicy Burgers",
+      title: "Juicy Steak",
       desc: "Burger Bliss: Juicy patties, bold flavors, and gourmet toppings galore.",
-      img: "/slide2.jpg",
+      img: "/slide4.jpg",
       color: "black",
     },
     {
       id: 3,
       slug: "pizzas",
-      title: "Cheesy Pizzas",
+      title: "Chicken Stew",
       desc: "Pizza Paradise: Irresistible slices, mouthwatering toppings, and cheesy perfection.",
-      img: "/slide3.jpg",
+      img: "/slide5.jpg",
       color: "white",
     },
   ];

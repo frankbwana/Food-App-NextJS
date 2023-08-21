@@ -1,5 +1,5 @@
-
-import React from 'react'
+"use client"
+import React, { useState, useEffect } from 'react'
 
 type Props = {
     price: number;
@@ -8,9 +8,44 @@ type Props = {
 }
 
 const Price = ({ price, id, options}: Props) => {
+
+   const [total, setTotal] = useState(price)
+   const [quantity, setQuantity] = useState(1)
+   const [selected, setSelected] = useState(0)
+
+   useEffect(() =>{
+     setTotal(quantity * (options ? price + options[selected].additionalPrice : price ))
+   }, [quantity, selected, options, price])
+
   return (
-    <div>
-        <h2>${price}</h2>
+    <div className=' flex flex-col gap-4'>
+        <h2 className=' font-bold text-2xl'>${total}</h2>
+        <div className=' flex gap-4'>
+          {options?.map((option, index)=>(
+            <button key={option.title}
+             className=' p-2 ring-1 ring-blue-500 rounded-md min-w-[6rem]'
+             style={{
+              background: selected === index ? "rgb(59 130 246)" : "white",
+              color: selected === index ? "white" : "rgb(59 130 246)"
+             }}
+             onClick={() => setSelected(index)}
+             >
+              {option.title}
+              </button>
+          ))}   
+        </div>
+
+        <div className=' flex justify-between items-center'>
+          <div className=' flex justify-between w-full p-2 ring-1 ring-blue-500'>
+            <span>Quantity</span>
+            <div className=' flex gap-4 items-center'>
+              <button onClick={() => setQuantity(prev=>(prev>1 ? prev-1 : 1))}>{'<'}</button>
+              <span>{quantity}</span>
+              <button onClick={() => setQuantity(prev=>(prev<9 ? prev+1 : 9))}>{'>'}</button>
+            </div>
+          </div>
+          <button className=' p-3 w-56 bg-blue-500 uppercase text-white'>Add to Cart</button>
+        </div>
     </div>
   )
 }

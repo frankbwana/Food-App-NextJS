@@ -12,7 +12,7 @@ const Offer = () => {
         <button className=' bg-blue-500 text-white p-4 rounded-xl'>Order Now</button>
       </div>
       <div className=' relative flex-1'>
-        <Image src='/slide16.jpg' alt='' fill className=' object-contain'/>
+        <Image src='/slide10.jpg' alt='' fill className=' object-contain'/>
       </div>
     </div>
   )

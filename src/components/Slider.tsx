@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     title: "Elevate Your Tastebuds: Irresistible Creations Awaits Your Palate",
-    image: "/slide2.jpg"
+    image: "/slide18.jpg"
   },
   {
     id: 3,
